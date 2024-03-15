@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <title>Tides1</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Load jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <h1>Tide Predictions</h1>
+
+        <div id="header">
+            <label for="Station"><b>Tide Station:</b></label>
+            <select id="Station" name="Station"></select>
+            <label for="dateStart" id="dateLabel"><b>Date:</b></label>
+            <input type="date" id="dateStart">
+            <button type="submit" id="getTidesBtn" name="getTides" onclick="getTides()">Get Tidal Info</button>
+        </div>
+
+        <div id="graph-cont" class="graph-container">
+            <h2 id="graphTitle"></h2>
+        </div>
+        
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+</html>
