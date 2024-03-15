@@ -1,0 +1,84 @@
+/* Place your CSS styles in this file */
+.graph-container {
+    position: relative;
+    width: 100%;
+}
+
+.bar {
+    display: flex;
+    height: 11px;
+    width: 100%;
+    line-height: 12px;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 7px;
+}
+
+.negative {
+    display: inline-block;
+    width: 0%;
+    color: black;
+}
+
+.green {
+    content: '';
+    border-radius: 3px;
+    background: #38bdc9;
+    height: 12px;
+    transition: 0.7s;
+    display: inline-block;
+    width: 0%;
+    max-width: calc(100% - 40px);
+    /*-webkit-animation: bar-before 1 1.8s;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+        
+.white {
+    /*content: '';*/
+    max-width: 100%;
+    position: relative;
+    /*left: 0;*/
+    display: inline-block;
+    height: 12px;
+    /*top: 0;
+    z-index: -2;*/
+    /*background: #ecf0f1;*/
+    color: black;
+}
+        
+
+@-webkit-keyframes bar-before {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+        
+.green:hover{
+    background: lime;
+}
+        
+/*#bar0 {
+    max-width: 99%;
+}
+        
+#h0 {
+    content: '';
+}*/
+
+@media print {
+    .green {
+        border: black 1px solid;
+    }
+    body {
+        break-inside: avoid;
+    }
+    title, h1, #data-head, #header, #error {
+        display: none;
+    }
+}
