@@ -23,7 +23,9 @@ tideStationArray[5] = new TideStation('San Francisco (Golden Gate)', '9414290', 
 tideStationArray[6] = new TideStation('Richmond', '9414863', false, true, 0 , undefined, undefined, undefined);
 tideStationArray[7] = new TideStation('Martinez', '9415102', false, true, 0 ,undefined, undefined, undefined);
 tideStationArray[8] = new TideStation('Long Beach', '9410680', false, true, 0 ,undefined, undefined, undefined);
-tideStationArray[9] = new TideStation('Tesoro Pier 15 foot (Currents)', 'COI0801', true, true, 0, undefined, undefined, undefined);
+tideStationArray[9] = new TideStation('Tesoro Pier 15 feet (Currents)', 'COI0801', true, true, 0, undefined, undefined, undefined);
+tideStationArray[10] = new TideStation('Cherry Point 47 feet (Currents)', 'cp0101', true, true, 0, undefined, undefined, undefined);
+tideStationArray[11] = new TideStation('Benicia Bridge 15 feet (Currents)', 's06010', true, true, 0, undefined, undefined, undefined);
 
 // setup the array to show on the drop down 
 var size = tideStationArray.length;
